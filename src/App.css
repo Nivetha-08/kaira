@@ -1,0 +1,27 @@
+.main .h1
+{
+    font-size:  100px;
+}
+
+.img-container{
+    overflow: hidden;
+}
+
+img{
+    transition: transform 0.3s ease;
+}
+
+img:hover{
+    transform: scale(1.2);
+} 
+
+.icons .ico
+{
+    font-size: 40px;
+}
+
+.footer .social
+{
+    font-size: 30px;
+    padding: 2px;
+}
