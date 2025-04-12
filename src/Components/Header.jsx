@@ -1,8 +1,6 @@
 import React from 'react'
 import { CiSearch } from "react-icons/ci";
 import { LuArrowBigLeftDash } from "react-icons/lu";
-import { CiHeart } from "react-icons/ci";
-import { IoMdCart } from "react-icons/io";
 
 const Header = () => {
   return (
@@ -19,7 +17,7 @@ const Header = () => {
               <ul className="navbar-nav mx-auto mb-2 mb-lg-0"> {/* me-auto/mx-auto/ms-auto  */}
 
                 <li className="nav-item dropdown ndropdown" data-bs-theme='dark'>
-                  <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a className="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     HOME
                   </a>
                   <ul className="dropdown-menu ndropdown-menu">
@@ -67,7 +65,7 @@ const Header = () => {
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">BLOG</a>
+                  <a className="nav-link" aria-current="page" href="#">BLOG</a>
                 </li>
 
                 <li className="nav-item">
@@ -75,24 +73,15 @@ const Header = () => {
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">WISHLIS(0)</a>
-                </li>
-
-                <li className="nav-item">
-                  <a className="nav-link" href="#">WISHLIS(0)</a>
-                </li>
-                  
+                  <a className="nav-link" aria-current="page" href="#">WISHLIST(0)</a>
+                </li>                 
               </ul>
-              <div className='d-none col-sm me-auto'>
-                <span><CiHeart /></span>
-                <span><IoMdCart /></span>
-              </div>
               <p><CiSearch className='me-auto ' /></p>
             </div>
           </div>
         </nav>
 
-        <div className="offcanvas offcanvas-end" data-bs-theme='dark' tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div className="offcanvas offcanvas-end" data-bs-theme='dark' id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
           <div className="offcanvas-header">
             <h5 className="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
             <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -157,13 +146,8 @@ const Header = () => {
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">WISHLIS(0)</a>
+                  <a className="nav-link" aria-current="page" href="#">WISHLIST(0)</a>
                 </li>
-
-                <li className="nav-item">
-                  <a className="nav-link" href="#">WISHLIS(0)</a>
-                </li>
-                  
               </ul>
           </div>
         </div>
